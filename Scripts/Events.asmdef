@@ -1,0 +1,17 @@
+{
+    "name": "BumpySellotape.Events",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3aab6fac66d7eb74bb5cf5a1657b7950",
+        "GUID:1d185e5ec6728af49a25dda8efb6d995"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
