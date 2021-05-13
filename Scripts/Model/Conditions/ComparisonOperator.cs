@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CcgCore.Model.Effects.Conditions
+namespace BumpySellotape.Events.Model.Conditions
 {
     public enum ComparisonOperator
     {
