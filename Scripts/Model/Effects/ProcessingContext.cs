@@ -1,10 +1,13 @@
 ﻿using BumpySellotape.Events.Controller;
 using BumpySellotape.Events.Model.Conditions;
+using BumpySellotape.Events.Model.Effects.Text;
 
 namespace BumpySellotape.Events.Model.Effects
 {
     public class ProcessingContext : EvaluationContext
     {
+        public IEventTextManager eventTextManager;
+
         //public List<InteractionEventOption> eventOptions = new List<InteractionEventOption>();
 
         //public string eventTitle;
