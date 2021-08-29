@@ -9,5 +9,13 @@ namespace BumpySellotape.Events.Model.Effects.Text
         public DialogueActor DialogueActor => dialogueActorToggle.Object;
 
         [field: SerializeField] public string Text { get; private set; }
+
+        public DisplayText()
+        { }
+
+        public DisplayText(string text)
+        {
+            Text = text;
+        }
     }
 }

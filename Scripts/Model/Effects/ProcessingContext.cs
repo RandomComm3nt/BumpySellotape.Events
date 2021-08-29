@@ -17,6 +17,10 @@ namespace BumpySellotape.Events.Model.Effects
         public bool isLoggingEnabled = false;
         
         public GameController GameController { get; }
+        public ProcessingContext()
+        {
+
+        }
         public ProcessingContext(GameController gameController)
         {
             GameController = gameController;
