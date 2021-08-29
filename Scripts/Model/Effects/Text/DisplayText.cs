@@ -1,8 +1,10 @@
 ﻿using BumpySellotape.Core.References;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace BumpySellotape.Events.Model.Effects.Text
 {
+    [HideReferenceObjectPicker]
     public class DisplayText
     {
         [SerializeField] private ReferenceToggle<DialogueActor> dialogueActorToggle = new ReferenceToggle<DialogueActor>();
