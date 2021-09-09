@@ -11,7 +11,7 @@ namespace BumpySellotape.Events.Controller
 
         public void Start()
         {
-            rootNode.Process(new Model.Effects.ProcessingContext(this));
+            rootNode?.Process(new Model.Effects.ProcessingContext(this));
         }
     }
 }
