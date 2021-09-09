@@ -1,8 +1,6 @@
 ﻿using BumpySellotape.Events.Model.Conditions;
+using BumpySellotape.Stats.Model;
 using Sirenix.OdinInspector;
-using Stats.Controller;
-using Stats.Model;
-using System.Linq;
 using UnityEngine;
 
 namespace CcgCore.Model.Effects

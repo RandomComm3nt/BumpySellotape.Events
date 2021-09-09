@@ -1,5 +1,5 @@
 ﻿using BumpySellotape.Events.Model.Utilities;
-using Stats.Model;
+using BumpySellotape.Stats.Model;
 using System;
 using UnityEngine;
 
