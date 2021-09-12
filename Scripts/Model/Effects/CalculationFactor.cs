@@ -1,5 +1,6 @@
-﻿using BumpySellotape.Events.Model.Conditions;
-using BumpySellotape.Stats.Model;
+﻿using BumpySellotape.Core.Stats.Controller;
+using BumpySellotape.Core.Stats.Model;
+using BumpySellotape.Events.Model.Conditions;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
