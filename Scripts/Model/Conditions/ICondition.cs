@@ -6,4 +6,9 @@
 
         string Label { get; }
     }
+
+    public interface IScopeCondition : ICondition
+    {
+        bool Evaluate(ScopeEvaluationContext evaluationContext);
+    }
 }

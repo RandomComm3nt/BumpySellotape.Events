@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Sirenix.OdinInspector;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -13,7 +14,7 @@ namespace BumpySellotape.Events.Model.Conditions
         }
 
         [SerializeField] private GroupType groupType = GroupType.And;
-        [SerializeField] private List<ICondition> criteria = new List<ICondition>();
+        [SerializeField, HideReferenceObjectPicker] private List<ICondition> criteria = new();
 
         public string Label => $"Group";
 
