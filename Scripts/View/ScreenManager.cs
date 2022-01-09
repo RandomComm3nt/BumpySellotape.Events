@@ -6,7 +6,7 @@ namespace BumpySellotape.Events.View
 {
     public class ScreenManager : MonoBehaviour
     {
-        [SerializeField] private RectTransform sceneTransform = default;
+        [SerializeField] private Transform sceneTransform = default;
         /*
         private CombatGameController combatGameController;
 

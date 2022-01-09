@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using BumpySellotape.Events.Controller;
+using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace BumpySellotape.Events.Model.Effects.Text
 {
@@ -10,7 +12,7 @@ namespace BumpySellotape.Events.Model.Effects.Text
 
         public void Process(ProcessingContext processingContext)
         {
-            processingContext.eventTextManager.AddEventText(displayText);
+            processingContext.SystemLinks.GetSystemSafe<IEventTextManager>().AddEventText(displayText);
         }
     }
 }

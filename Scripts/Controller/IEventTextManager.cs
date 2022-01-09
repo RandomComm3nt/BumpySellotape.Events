@@ -1,4 +1,6 @@
-﻿namespace BumpySellotape.Events.Model.Effects.Text
+﻿using BumpySellotape.Events.Model.Effects.Text;
+
+namespace BumpySellotape.Events.Controller
 {
     public interface IEventTextManager
     {

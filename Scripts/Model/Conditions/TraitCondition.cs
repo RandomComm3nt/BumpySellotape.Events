@@ -19,7 +19,7 @@ namespace BumpySellotape.Events.Model.Conditions
 
         bool ICondition.Evaluate(EvaluationContext evaluationContext)
         {
-            var traitCollection = evaluationContext.systemLinks.GetSystemOrNull<TraitCollection>();
+            var traitCollection = evaluationContext.SystemLinks.GetSystemOrNull<TraitCollection>();
             if (traitCollection != null)
             {
                 if (traitCollection.Traits.Any(t => traitTypes.Any(tt => tt.TraitName == t.TraitType.TraitName) || tagList.Intersects(t.TraitType.TagList)))

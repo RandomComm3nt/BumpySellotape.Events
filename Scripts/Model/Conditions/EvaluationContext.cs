@@ -4,6 +4,6 @@ namespace BumpySellotape.Events.Model.Conditions
 {
     public class EvaluationContext
     {
-        public SystemLinks systemLinks;
+        public SystemLinks SystemLinks { get; protected set; } = new();
     }
 }
