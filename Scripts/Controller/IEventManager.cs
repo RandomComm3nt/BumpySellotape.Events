@@ -10,5 +10,6 @@ namespace BumpySellotape.Events.Controller
         void ProcessEventNode(EventNode eventNode);
         void SetSystemLink(object system);
         void SetSystemLink(Type t, object system);
+        void AdvanceFrame();
     }
 }

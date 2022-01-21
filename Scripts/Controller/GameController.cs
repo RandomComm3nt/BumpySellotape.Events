@@ -1,5 +1,5 @@
-﻿using BumpySellotape.Core.Transitions;
-using BumpySellotape.Events.Model.Effects.Text;
+﻿using BumpySellotape.Core.Input;
+using BumpySellotape.Core.Transitions;
 using BumpySellotape.Events.Model.Nodes;
 using BumpySellotape.Events.View;
 using UnityEngine;
@@ -10,8 +10,10 @@ namespace BumpySellotape.Events.Controller
     {
         [SerializeField] private EventNode rootNode = default;
         [SerializeField] private CutsceneManager cutsceneManager = default;
-        [field: SerializeField] public TransitionManager TransitionManager { get; private set; } = default;
+
+        [field: SerializeField] public TransitionManager TransitionManager { get; private set; }
         [field: SerializeField] public ScreenManager ScreenManager { get; private set; }
+        [field: SerializeField] public InputManager InputManager { get; private set; }
         public IEventManager EventManager { get; protected set; }
 
         public void Start()
@@ -60,6 +62,13 @@ namespace BumpySellotape.Events.Controller
             EventManager.SetSystemLink(typeof(IEventTextManager), cutsceneManager.EventTextManager);
             EventManager.SetSystemLink(typeof(IBackgroundRenderer), cutsceneManager);
             EventManager.ProcessEventNode(sceneEvent);
+        }
+
+        private void Update()
+        {/*
+            if (Input.GetKeyDown(KeyCode.Space))
+                EventManager.AdvanceFrame();
+            */
         }
     }
 }

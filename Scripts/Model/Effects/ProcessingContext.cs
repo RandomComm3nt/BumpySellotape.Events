@@ -1,5 +1,7 @@
 ﻿using BumpySellotape.Events.Controller;
 using BumpySellotape.Events.Model.Conditions;
+using BumpySellotape.Events.Model.Nodes;
+using System.Collections.Generic;
 
 namespace BumpySellotape.Events.Model.Effects
 {
@@ -12,7 +14,10 @@ namespace BumpySellotape.Events.Model.Effects
         //public InteractionWindow interactionWindow;
 
         public bool isLoggingEnabled = false;
-        
+        public List<EventFrame> queuedFrames;
+
+        public bool HasQueuedFrames => queuedFrames?.Count > 0;
+
         public GameController GameController { get; }
 
         public ProcessingContext(GameController gameController)
