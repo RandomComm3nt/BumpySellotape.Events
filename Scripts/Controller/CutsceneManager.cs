@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace BumpySellotape.Events.Controller
@@ -8,6 +9,7 @@ namespace BumpySellotape.Events.Controller
         private GameObject loadedSceneObject;
         private VisualElement background;
         private CutsceneEventTextManager eventTextManager;
+        [SerializeField] private GameController gameController = null;
         [SerializeField] private UIDocument uiDocument = null;
 
         public IEventTextManager EventTextManager => eventTextManager;
@@ -39,6 +41,11 @@ namespace BumpySellotape.Events.Controller
         void IBackgroundRenderer.SetBackground(Sprite sprite)
         {
             background.style.backgroundImage = new StyleBackground(sprite);
+        }
+
+        public void OnAdvanceText()
+        {
+            gameController.EventManager.AdvanceFrame();
         }
     }
 }

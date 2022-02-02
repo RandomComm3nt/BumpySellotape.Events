@@ -42,6 +42,7 @@ namespace BumpySellotape.Events.Controller
         public void EnterCutscene(EventNode sceneEvent, GameObject sceneObject)
         {
             StopScreen();
+            InputManager.SetInputHandler<CutsceneInputHandler, CutsceneManager>(cutsceneManager);// TECH DEBT - should clear input handler and set once loaded
             TransitionManager.DoTransition(
                 null,
                 () => StartScene(sceneEvent, sceneObject),
